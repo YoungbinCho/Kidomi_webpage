@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+kidomi.egg-info/PKG-INFO
+kidomi.egg-info/SOURCES.txt
+kidomi.egg-info/dependency_links.txt
+kidomi.egg-info/requires.txt
+kidomi.egg-info/top_level.txt

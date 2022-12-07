@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kidomi
+Version: 1.0.0
+Summary: The basic blog app built in the Flask tutorial.
+Home-page: https://flask.palletsprojects.com/tutorial/
+Maintainer: Pallets
+Maintainer-email: contact@palletsprojects.com
+License: BSD-3-Clause
+Description-Content-Type: text/x-rst
+Provides-Extra: test

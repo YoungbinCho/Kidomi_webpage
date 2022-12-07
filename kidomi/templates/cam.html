@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidomi</title>
+    <script defer src="{{url_for('static', filename='js/face-api.min.js')}}"></script>
+    <script defer src="{{url_for('static', filename='js/script.js')}}"></script>
+    <style>
+        @font-face {
+        font-family: 'LINESeedKR-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+        .content_box{
+            display:flex;
+            justify-content: center;
+            background-color: lightgrey;
+        }
+        .content{
+            background-color: rgb(7, 7, 85);
+            /* background-color: pink; */
+            height:97vh;
+            width:30vw;
+            display: flex;
+            justify-content: center;   
+            flex-direction: column;
+        }
+        .video_box{
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            position:relative;
+            margin-top: 40pt;
+        }
+        #msg{
+            font-size: 28pt;
+            font-family: 'LINESeedKR-Bd';
+            letter-spacing: 3pt;
+            color: lavenderblush;
+            text-align: center;
+            margin-top: -20pt;
+        }
+        canvas{
+            position:absolute;
+            /* margin-bottom: 60pt; */
+        }
+    </style>
+</head>
+<body>
+    <div class="content_box">
+        <div class="content">
+            <p id="msg">카메라를 응시해주세요</p>
+            <div class="video_box">
+                <video id="video" width="400" height="300" autoplay muted></video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

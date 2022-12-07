@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+        font-family: 'LINESeedKR-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+        .content{
+            background-color: lightgrey;
+            display:flex;
+            justify-content: center;
+        }
+        #main{
+            height:97vh;
+            /* width:30vw; */
+        }
+        .page_image{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="page_image">
+            <img src="{{url_for('static',filename='image/menu1.png')}}" alt="시작페이지" id="main" onclick="location.href='/index'">
+        </div>
+    </div>
+</body>
+</html>

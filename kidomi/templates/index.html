@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+        font-family: 'LINESeedKR-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+        .content{
+            background-color: lightgrey;
+            display:flex;
+            justify-content: center;
+        }
+        #main{
+            height:97vh;
+            /* width:30vw; */
+        }
+        .startBtn{
+            background-color:rgb(7, 7, 85);
+            position:absolute;
+            bottom:10px;
+            height:24vh;
+            width:29.9vw;
+            border:none;
+            font-size: 55pt;
+            color:lavenderblush;
+            letter-spacing: 10pt;
+            font-family: 'LINESeedKR-Bd';
+        }
+        .page_image{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="page_image">
+            <img src="{{url_for('static',filename='image/main_page2.png')}}" alt="시작페이지" id="main">
+        </div>
+        <button class="startBtn" id="startBtn" type="button">주문하기</button>
+    </div>
+</body>
+</html>
+<script>
+    startBtn = document.getElementById('startBtn')
+    startBtn.addEventListener("click",function(){
+        location.href='/cam';
+    })
+</script>
